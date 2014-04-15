@@ -46,12 +46,13 @@ var swapCase = function(str){
 	array.map(function(char){
 		
 		if(char >= 'A' && char <= 'Z'){
-			char.toLowerCase();
-			newArray.push(char);
+			
+			newArray.push(char.toLowerCase());
+
 		}
 		else if(char >= 'a' && char <= 'z'){
-			char.toUpperCase();
-			newArray.push(char);
+			
+			newArray.push(char.toUpperCase());
 		}
 		else{
 			newArray.push(char);
@@ -66,3 +67,5 @@ var swapCase = function(str){
 }
 
 swapCase("Hello World");
+
+
